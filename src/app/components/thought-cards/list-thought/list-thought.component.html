@@ -1,6 +1,11 @@
 <section class="container">
   <header class="header d-flex">
     <h2 class="ff-inter">Meu moral</h2>
-    <button class="botao">Adicionar pensamentos</button>
+    <button routerLink="/thought/create" class="botao">Adicionar pensamentos</button>
   </header>
+  <div class="mural">
+    <div *ngFor="let thought of thoughtsList">
+      <app-thought-card/>
+    </div>
+  </div>
 </section>

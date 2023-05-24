@@ -5,7 +5,7 @@
   </header>
   <div class="mural">
     <div *ngFor="let thought of thoughtsList">
-      <app-thought-card/>
+      <app-thought-card [thought]="thought"/>
     </div>
   </div>
 </section>
